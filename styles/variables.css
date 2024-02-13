@@ -1,7 +1,14 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --bg-image: url('../images/background_theme_light.svg');
-  --bg-color: #FFFFFF;
+  --bg-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(#d3d3d3, transparent 2px),
+    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  --bg-color: #ffffff;
   --text-color: #000000;
-  --active-color: rgb(0, 0, 0, .6);
+  --btn-text-color: #ffffff;
+  --active-color: rgb(0, 0, 0, 0.6);
+  --main-font: "Inter Variable", sans-serif;
+  --accent-font: "PressStart2P Regular", sans-serif;
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
 }
