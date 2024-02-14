@@ -290,7 +290,7 @@
 
 .save__button {
   gap: 8px;
-  padding: 15px 18px;
+  padding: 15px 15px;
   inline-size: clamp(19.125rem, 18.487rem + 2.723vw, 20.938rem);
 }
 
@@ -397,4 +397,10 @@
 
 .filter-sepia {
   filter: sepia(60%);
+}
+
+@media(width > 768px) {
+.costil {
+  display: none;
+}
 }
