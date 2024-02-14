@@ -295,6 +295,7 @@
 }
 
 .save__button-text {
+  text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -311,6 +312,8 @@
   inline-size: clamp(21.313rem, 21.048rem + 1.127vw, 22.063rem);
   padding: 30px;
   border: 2px solid var(--text-color);
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 #dialog-save::backdrop {

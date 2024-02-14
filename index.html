@@ -543,7 +543,7 @@
         type="button"
         onclick="window['dialog-save'].showModal();"
       >
-        <div class="button__text save__button-text">
+        <a class="button__text save__button-text">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="21px"
@@ -554,11 +554,12 @@
             <use href="./images/floppy.svg#img-floppy" />
           </svg>
           <p>Сохранить на память</p>
-        </div>
+        </a>
       </button>
     </footer>
     <dialog id="dialog-save">
       <div class="button__text dialog-content">
+        <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 21 21"
@@ -566,13 +567,13 @@
           >
             <use href="./images/floppy.svg#img-floppy" />
           </svg>
+        </div>
         <p>Вставьте дискету, чтобы продолжить</p>
       </div>
       <button
         class="button dialog__button"
         type="button"
         onclick="window['dialog-save'].close()"
-        aria-controls="dialog-save"
       >
         <span class="button__text">ок</span>
       </button>
