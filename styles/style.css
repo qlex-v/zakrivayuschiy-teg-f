@@ -368,3 +368,7 @@
 .card__image {
   width: 100%;
 }
+
+.filter-blur {
+  filter: blur(20px);
+}
