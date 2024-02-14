@@ -18,6 +18,12 @@
   }
 }
 
+@keyframes theme-menu__button-hover {
+  to {
+    color: var(--active-color);
+  }
+}
+
 @keyframes heart-scale {
   from {
     transform: scale(1);
@@ -32,7 +38,7 @@
 
 @keyframes sparks {
   50% {
-    fill: #FF0000;
+    fill: #ff0000;
   }
   to {
     fill: transparent;

@@ -17,6 +17,11 @@
 .container {
   margin: 0 auto;
   inline-size: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+
+  @media(width < 768px) {
+    margin: 0 0;
+    inline-size: 100%;
+  }
 }
 
 .page {
@@ -25,9 +30,7 @@
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 320px;
-  min-block-size: 100dvb;
-  /* background: center / cover var(--bg-image);
-  background-attachment: fixed; */
+  /* min-block-size: 100dvb; */
   font-variation-settings: "wght" var(--main-font-weight);
 }
 
@@ -65,18 +68,18 @@
 .theme-menu__button {
   border: 0;
   background-color: transparent;
-  transition: color 0.3s ease;
   position: relative;
   background-image: linear-gradient(var(--active-color), var(--active-color));
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: 0% 2px;
-  transition: background-size .6s;
+  transition: background-size 0.3s;
   padding-block-end: 2px;
+  text-transform: uppercase;
 }
 
 .theme-menu__button:hover {
-  color: var(--active-color);
+  animation: theme-menu__button-hover 0.3s ease forwards;
   cursor: pointer;
 }
 
@@ -89,7 +92,7 @@
   background-size: 100% 2px;
 }
 
-.theme-menu__button:focus-visible .theme-menu__button::after{
+.theme-menu__button:focus-visible .theme-menu__button::after {
   background-position: 100% 100%;
 }
 
@@ -104,7 +107,7 @@
   content: "▶";
   position: absolute;
   left: -20px;
-  font-size: 16px;
+  font-size: 14px;
   animation: theme-menu__item-active 0.5s alternate infinite ease-in-out;
 }
 
@@ -333,3 +336,35 @@
   min-block-size: 38px;
 }
 
+.card__image-container {
+  position: relative;
+}
+
+.card__image-text {
+  position: absolute;
+  top: 25px;
+  right: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  mix-blend-mode: hard-light;
+  text-shadow: -0.5px 0 var(--bg-color), 0 0.5px var(--bg-color),
+    0.5px 0 var(--bg-color), 0 -0.5px var(--bg-color);
+  opacity: 50%;
+}
+
+@supports (
+  (text-stroke: 0.5px var(--bg-color)) or
+    (-webkit-text-stroke: 0.5px var(--bg-color))
+) {
+  .card__image-text {
+    -webkit-text-stroke: 0.5px var(--bg-color);
+    text-stroke: 5px var(--bg-color);
+    text-shadow: none;
+  }
+}
+
+.card__image {
+  width: 100%;
+}

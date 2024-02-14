@@ -10,8 +10,8 @@
     repeating-linear-gradient(#000, transparent 2px),
     repeating-linear-gradient(#007f0c 0.01%, #004306 100%);
   --bg-color: #000000;
-  --text-color: #00CC14;
-  --btn-text-color: #00CC14;
+  --text-color: #00cc14;
+  --btn-text-color: #00cc14;
   --active-color: rgb(0, 204, 20, 0.6);
   --main-font-weight: 465;
   --accent-font-weight: 785;
@@ -34,8 +34,8 @@
       repeating-linear-gradient(#000, transparent 2px),
       repeating-linear-gradient(#007f0c 0.01%, #004306 100%);
     --bg-color: #000000;
-    --text-color: #00CC14;
-    --btn-text-color: #00CC14;
+    --text-color: #00cc14;
+    --btn-text-color: #00cc14;
     --active-color: rgb(0, 204, 20, 0.6);
     --main-font-weight: 465;
     --accent-font-weight: 785;
@@ -44,13 +44,13 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-  --bg-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(#d3d3d3, transparent 2px),
-    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --active-color: rgb(0, 0, 0, 0.6);
-  --main-font-weight: 400;
-  --accent-font-weight: 700;
+    --bg-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+      repeating-linear-gradient(#d3d3d3, transparent 2px),
+      repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --active-color: rgb(0, 0, 0, 0.6);
+    --main-font-weight: 400;
+    --accent-font-weight: 700;
   }
 }
