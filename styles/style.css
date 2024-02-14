@@ -295,7 +295,6 @@
 }
 
 .save__button-text {
-  text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -303,10 +302,6 @@
   gap: 8px;
 }
 
-#img-floppy {
-  /* width: 21px;
-  height: 21px; */
-}
 
 #dialog-save {
   inline-size: clamp(21.313rem, 21.048rem + 1.127vw, 22.063rem);
