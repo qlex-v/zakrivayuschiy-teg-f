@@ -370,5 +370,33 @@
 }
 
 .filter-blur {
-  filter: blur(20px);
+  filter: blur(5px);
+}
+
+.filter-mix {
+  filter: invert(1) brightness(200%) saturate(60%) hue-rotate(90deg);
+}
+
+.filter-ivert {
+  filter: invert(75%);
+}
+
+.filter-brightless {
+  filter: brightness(0.4);
+}
+
+.filter-contrast {
+  filter: contrast(200%);
+}
+
+.filter-hue {
+  filter: hue-rotate(90deg);
+}
+
+.filter-grayscale {
+  filter: grayscale(50%);
+}
+
+.filter-sepia {
+  filter: sepia(60%);
 }
