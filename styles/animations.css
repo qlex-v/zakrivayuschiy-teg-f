@@ -18,29 +18,20 @@
   }
 }
 
-@keyframes theme-menu__button-hover {
-  to {
-    color: var(--active-color);
-  }
-}
-
 @keyframes heart-scale {
-  from {
+   from {
     transform: scale(1);
   }
-  50% {
+  /*50% {
     transform: scale(1.5);
-  }
+  } */ 
   to {
-    transform: scale(1);
+    transform: scale(1.2);
   }
 }
 
 @keyframes sparks {
-  50% {
-    fill: #ff0000;
-  }
   to {
-    fill: transparent;
+    fill: #ff0000;
   }
 }
