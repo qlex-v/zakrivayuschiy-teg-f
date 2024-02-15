@@ -18,7 +18,7 @@
   margin: 0 auto;
   inline-size: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
 
-  @media(width < 768px) {
+  @media (width < 768px) {
     margin: 0 0;
     inline-size: 100%;
   }
@@ -302,7 +302,6 @@
   gap: 8px;
 }
 
-
 #dialog-save {
   inline-size: clamp(21.313rem, 21.048rem + 1.127vw, 22.063rem);
   padding: 30px;
@@ -399,8 +398,8 @@
   filter: sepia(60%);
 }
 
-@media(width > 768px) {
-.costil {
-  display: none;
-}
+@media (width > 768px) {
+  .costil {
+    display: none;
+  }
 }
