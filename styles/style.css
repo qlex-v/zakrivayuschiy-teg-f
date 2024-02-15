@@ -85,7 +85,7 @@
   inline-size: 100%;
   block-size: 2px;
   position: absolute;
-  border-bottom: 2px solid var(--active-color);;
+  border-bottom: 2px solid var(--active-color);
   left: 0;
   bottom: 0;
   transform: scale(0);
@@ -121,7 +121,7 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  top:0;
+  top: 0;
   left: -20px;
   font-size: 14px;
   animation: theme-menu__item-active 0.5s alternate infinite ease-in-out;
@@ -213,7 +213,7 @@
 
 .core {
   fill: var(--bg-color);
-  transition: fill 0.3s linear .03s;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .sparks {
@@ -261,7 +261,7 @@
 }
 
 .like-icon.is-liked .contour {
-  transition: fill 0.3s linear .06s;
+  transition: fill 0.3s linear 0.06s;
   fill: var(--icon-btn-color);
 }
 
@@ -312,7 +312,7 @@
   inline-size: 100%;
   block-size: 100%;
   position: absolute;
-  background-color:  var(--text-color);
+  background-color: var(--text-color);
   left: 0;
   bottom: 0;
   transform: scale(0, 1);
@@ -337,7 +337,6 @@
   min-inline-size: 130px;
 }
 
-
 .footer {
   display: flex;
   justify-content: center;
@@ -360,7 +359,7 @@
 }
 
 .dialog::backdrop {
-  background-color: rgb(0,0,0, .75);
+  background-color: rgb(0, 0, 0, 0.75);
 }
 
 .dialog-content__text {
@@ -417,10 +416,4 @@
 
 .filter-sepia {
   filter: sepia(60%);
-}
-
-@media (width > 768px) {
-  .costil {
-    display: none;
-  }
 }

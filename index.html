@@ -76,7 +76,11 @@
             </p>
           </div>
           <div class="card__like">
-            <button class="card__icon-button" type="button" aria-labelledby="card-1">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-labelledby="card-1"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -138,7 +142,11 @@
             </p>
           </div>
           <div class="card__like">
-            <button class="card__icon-button" type="button" aria-labelledby="card-2">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-labelledby="card-2"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -195,7 +203,11 @@
             </p>
           </div>
           <div class="card__like">
-            <button class="card__icon-button" type="button" aria-labelledby="card-3">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-labelledby="card-3"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -259,7 +271,11 @@
             </p>
           </div>
           <div class="card__like">
-            <button class="card__icon-button" type="button" aria-labelledby="card-4">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-labelledby="card-4"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -324,7 +340,11 @@
             </p>
           </div>
           <div class="card__like">
-            <button class="card__icon-button" type="button" aria-labelledby="card-5">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-labelledby="card-5"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -384,7 +404,11 @@
             </p>
           </div>
           <div class="card__like">
-            <button class="card__icon-button" type="button" aria-labelledby="card-6">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-labelledby="card-6"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -448,7 +472,11 @@
             </p>
           </div>
           <div class="card__like">
-            <button class="card__icon-button" type="button" aria-labelledby="card-7">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-labelledby="card-7"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -511,7 +539,11 @@
             </p>
           </div>
           <div class="card__like">
-            <button class="card__icon-button" type="button" aria-labelledby="card-8">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-labelledby="card-8"
+            >
               <svg
                 class="like-icon"
                 width="39"
@@ -548,22 +580,20 @@
       </article>
     </main>
     <footer class="footer container">
-        <button
-          class="button save__button"
-          type="button"
-          onclick="window['dialog-save'].showModal();"
-        >
-          <span class="button__text">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="21px"
-              height="21px"
-            >
-              <use href="./svg/floppy.svg#img-floppy" />
-            </svg>
-            <br class="costil" />
-            Сохранить на память
-        </button>
+    <form method="dialog">
+      <button
+        class="button save__button"
+        type="button"
+        onclick="window['dialog-save'].showModal();"
+      >
+        <span class="button__text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="21px">
+            <use href="./svg/floppy.svg#img-floppy" />
+          </svg>
+          Сохранить на память
+        </span>
+      </button>
+    </form>
     </footer>
     <dialog id="dialog-save" class="dialog">
       <div class="dialog-content">
