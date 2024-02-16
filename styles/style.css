@@ -76,7 +76,7 @@
   position: relative;
   padding-block-end: 2px;
   text-transform: uppercase;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
   cursor: pointer;
 }
 
@@ -94,7 +94,7 @@
 }
 
 .theme-menu__button:focus-visible {
-  color: var(--active-color);
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -102,19 +102,16 @@
 }
 
 .theme-menu__button:hover {
-  color: var(--active-color);
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus {
   outline: none;
-}
-
-.theme-menu__button:focus-visible .theme-menu__button::after {
-  background-position: 100% 100%;
+  opacity: 0.6;
 }
 
 .theme-menu__button:disabled {
-  color: var(--active-color);
+  opacity: 0.6;
   pointer-events: none;
 }
 
@@ -208,7 +205,7 @@
 
 .main-body {
   fill: var(--bg-color);
-  transition: fill 0.3s linear 0.05s;
+  transition: fill 0.3s linear;
 }
 
 .core {
@@ -222,6 +219,7 @@
 
 .contour {
   fill: var(--text-color);
+  transition: fill 0.3s linear;
 }
 
 .heart {
@@ -230,14 +228,17 @@
 
 .like-icon {
   transform-origin: center;
+  width: 39px;
 }
 
 .like-icon:hover .main-body {
   fill: var(--text-color);
+  transition-delay: 0.05s;
 }
 
 .like-icon:hover .core {
   fill: var(--text-color);
+  transition-delay: 0s;
 }
 
 .like-icon:active .main-body {
@@ -305,6 +306,7 @@
   vertical-align: center;
   text-align: center;
   background-color: var(--bg-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .button::after {
@@ -344,9 +346,13 @@
 }
 
 .save__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
-  padding: 15px 15px;
-  inline-size: clamp(19.125rem, 18.487rem + 2.723vw, 20.938rem);
+  padding: 15px 18px;
+  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   color: var(--btn-text-color);
 }
 
@@ -416,4 +422,16 @@
 
 .filter-sepia {
   filter: sepia(60%);
+}
+
+.dialog-svg {
+  width: 39px;
+}
+
+.save__button-svg {
+  inline-size: clamp(21px, 2.255rem + -2.154vw, 28px);
+  block-size: clamp(21px, 2.255rem + -2.154vw, 28px);
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
 }

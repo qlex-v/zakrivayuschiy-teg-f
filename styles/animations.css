@@ -22,16 +22,16 @@
   from {
     transform: scale(1);
   }
-  /*50% {
-    transform: scale(1.5);
-  } */
   to {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
 }
 
 @keyframes sparks {
+  from {
+    fill: transparent;
+  }
   to {
-    fill: #ff0000;
+    fill: var(--icon-btn-color);
   }
 }
